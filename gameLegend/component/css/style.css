@@ -11,6 +11,10 @@ body {
   z-index: 1000;
 }
 
+#carouselExampleFade {
+  padding-top: 50px;
+}
+
 #corp {
   display: -ms-flexbox;
   display: flex;
