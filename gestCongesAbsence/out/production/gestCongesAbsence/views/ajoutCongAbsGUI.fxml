@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="169.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ajoutCongAbsGUIController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="205.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="94.0" text="Employé :">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding></Label>
+            <ListView fx:id="listemploye" prefHeight="122.0" prefWidth="90.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox accessibleRole="CHECK_BOX" alignment="CENTER" layoutX="100.0" prefHeight="205.0" prefWidth="118.0">
+         <children>
+            <Label alignment="CENTER" layoutX="100.0" prefHeight="23.0" prefWidth="118.0" text="Date Demande :">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <DatePicker />
+            <Label text="Motif:" />
+            <ChoiceBox fx:id="motifBox" cache="true" prefWidth="150.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="235.0" prefHeight="205.0" prefWidth="125.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="11.0" prefWidth="125.0" text="Date Depart :">
+               <padding>
+                  <Insets top="5.0" />
+               </padding></Label>
+            <DatePicker />
+            <Label prefHeight="17.0" prefWidth="80.0" text="Date Retour :" />
+            <DatePicker layoutX="10.0" layoutY="37.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="377.0" layoutY="-2.0" prefHeight="205.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" text="Valider" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
