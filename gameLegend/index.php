@@ -149,7 +149,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- S'identifier -->
+    <!-- S'identifié -->
     <div id="corp">
       <form class="form-signin">
         <h1 class="h3 mb-3 font-weight-normal">S'identifier</h1>
