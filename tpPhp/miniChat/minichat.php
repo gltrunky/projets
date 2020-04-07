@@ -35,15 +35,17 @@
         // Récupération des 10 derniers messages
         $reponse = $bdd->query('SELECT pseudo, message FROM chat ORDER BY ID DESC LIMIT 0, 10');
         ?>
-        <div class="bg-light col-4 ml-auto mr-auto mt-5 p-4">
+        <div class="bg-light col-4 ml-auto mr-auto mt-5 p-4 bg-dark text-light">
             <?php
             // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
-            while ($donnees = $reponse->fetch()) {
-                echo '<p><strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> : ' . htmlspecialchars($donnees['message']) . '</p>';
+            if (($reponse->rowCount()) > 0) {
+                while ($donnees = $reponse->fetch()) {
+                    echo '<p><strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> : ' . htmlspecialchars($donnees['message']) . '</p>';
+                }
+            } else {
+                echo 'Le chat est vide';
             }
-
             $reponse->closeCursor();
-
             ?>
         </div>
         <div class="col-4 mr-auto ml-auto mt-2">

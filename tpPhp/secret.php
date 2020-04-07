@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    if (isset($_POST['password']) and $_POST['password'] ==  "kangourou") {
+    if (isset($_POST['password']) and $_POST['password'] == "kangourou") {
     ?>
         <h1>La page secrete</h1>
         <p>Bienvenue sur la page secrete <?php echo htmlspecialchars($_POST['pseudo']) ?></p>

@@ -6,6 +6,6 @@ try {
 }
 // Effacer tous les message
 $req = $bdd->prepare('DELETE from chat');
-$req->execute(array($_POST['pseudo'], $_POST['message']));
+$req->execute();
 // Puis rediriger vers minichat.php comme ceci :
 header('Location: minichat.php');
